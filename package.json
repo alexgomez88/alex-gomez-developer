@@ -1,0 +1,35 @@
+{
+  "name": "alex-gomez-developer",
+  "version": "1.0.0",
+  "private": true,
+  "description": "alex-gomez-developer",
+  "author": "Alejandro Gomez",
+  "keywords": [
+    "gatsby"
+  ],
+  "scripts": {
+    "develop": "gatsby develop",
+    "start": "gatsby develop",
+    "build": "gatsby build",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@headlessui/react": "^1.5.0",
+    "@heroicons/react": "^1.0.6",
+    "autoprefixer": "^10.4.2",
+    "gatsby": "^4.8.0",
+    "gatsby-plugin-sass": "^5.8.0",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "sass": "^1.49.9",
+    "tailwindcss": "^3.0.23"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.14",
+    "@types/react": "^17.0.38",
+    "@types/react-dom": "^17.0.11",
+    "typescript": "^4.5.5"
+  }
+}
