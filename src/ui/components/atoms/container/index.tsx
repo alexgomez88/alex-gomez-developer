@@ -1,5 +1,5 @@
 import React from "react";
 
 export default function Container(props: any) {
-  return <div className="container mx-auto">{props.children}</div>;
+  return <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">{props.children}</div>;
 }

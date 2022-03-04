@@ -2,18 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
-.title-1{
-    @apply text-4xl sm:text-5xl md:text-6xl block font-extrabold;
+.title-1 {
+    @apply text-4xl sm:text-5xl md:text-6xl block;
 }
 
-.title-2{
-    @apply text-3xl sm:text-4xl md:text-5xl block font-extrabold;
+.title-2 {
+    @apply text-3xl sm:text-4xl md:text-5xl block;
 }
 
-.title-3{
-    @apply text-2xl sm:text-3xl md:text-4xl block font-extrabold;
+.title-3 {
+    @apply text-2xl sm:text-3xl md:text-4xl block;
 }
 
-.title-4{
-    @apply text-xl sm:text-2xl md:text-3xl block font-extrabold;
+.title-4 {
+    @apply text-xl sm:text-2xl md:text-3xl block;
 }

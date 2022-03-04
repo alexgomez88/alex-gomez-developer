@@ -1,6 +1,10 @@
 import React from 'react'
 import BaseNavbar from '../../atoms/base-navbar';
 
-export default function Navbar(props: any) {
-  return <BaseNavbar navbar-menu={props.menu} />;
+type Props = {
+  menu?: any[]
+}
+
+export default function Navbar(props: Props) {
+  return <BaseNavbar menu={props.menu} />;
 }

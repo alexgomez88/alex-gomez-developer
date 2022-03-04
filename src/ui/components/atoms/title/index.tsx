@@ -2,6 +2,7 @@ import React from "react";
 
 interface Props {
   level?: number;
+  weight?: string;
   className?: string;
   children: any;
 }
