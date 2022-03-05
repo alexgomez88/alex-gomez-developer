@@ -6,29 +6,72 @@ import Title from "../../atoms/title";
 
 export default function About(props: any) {
   return (
-    <div id="about" className="bg-sky-700 py-20">
-      <Container>
-        <Title level={2} className="text-center text-white mb-20">
-          About Me
-        </Title>
-        <div className="flex flex-col justify-center items-center">
-        <StaticImage src="../../../../images/profile.jpeg" className="w-64 aspect-square rounded-full mx-auto mb-20 ring-4 ring-white" alt=""/>
+    <>
+      <div id="about" className="bg-sky-700 py-20">
+        <Container>
+          <Title level={2} className="text-center text-white mb-20">
+            About Me
+          </Title>
+          <div className="flex flex-col justify-center items-center">
+            <StaticImage
+              src="../../../../images/profile.jpeg"
+              className="w-64 aspect-square rounded-full mx-auto mb-20 ring-4 ring-white"
+              alt=""
+            />
 
-        <p className="text-white text-justify max-w-2xl text-2xl mx-auto mb-10">
-          Hi, my name is Alejandro Gómez, I'm an experienced Mechanical Engineer
-          and Software Developer. As a mechanical engineer, operated and
-          maintained different transports services: automated people mover
-          (APM), aerial lifts (cable cars), and buses. And as Software
-          Developer, built different landing pages, websites, and mobile apps.
-        </p>
+            <p className="text-white text-justify max-w-2xl text-2xl mx-auto mb-10">
+              Hi, my name is Alejandro Gómez, I'm an experienced Mechanical
+              Engineer and Software Developer. As a mechanical engineer, I
+              operated and maintained different transports services: automated
+              people mover (APM), aerial lifts (cable cars), and buses. And as
+              Software Developer, built different landing pages, websites, and
+              mobile apps.
+            </p>
 
-        <p className="text-white text-justify max-w-2xl text-2xl mx-auto">
-          I work with the latest technologies and frameworks to build the best
-          applications. I have a strong background in web development, and I am
-          always looking for new challenges to improve my skills.
-        </p>
-        </div>
-      </Container>
-    </div>
+            <p className="text-white text-justify max-w-2xl text-2xl mx-auto">
+              I work with the latest technologies and frameworks to build the
+              best applications. I have a strong background in web development,
+              and I am always looking for new challenges to improve my skills.
+            </p>
+          </div>
+        </Container>
+      </div>
+      <svg
+        width="100%"
+        height="100%"
+        id="svg"
+        viewBox="0 0 1440 400"
+        xmlns="http://www.w3.org/2000/svg"
+        className="transition duration-300 ease-in-out delay-150 text-sky-700"
+      >
+        <path
+          d="M 0,400 C 0,400 0,100 0,100 C 31.22544486727027,100.03307131511424 62.45088973454054,100.06614263022848 107,97 C 151.54911026545946,93.93385736977152 209.4218859291081,87.76850079420028 264,97 C 318.5781140708919,106.23149920579972 369.8615665490269,130.85985419297032 405,131 C 440.1384334509731,131.14014580702968 459.13184787478383,106.79208243391845 502,99 C 544.8681521252162,91.20791756608155 611.6110419518379,99.97181607135587 659,110 C 706.3889580481621,120.02818392864413 734.4239843178643,131.32065328065815 771,124 C 807.5760156821357,116.67934671934185 852.6930207767049,90.7455708060115 905,83 C 957.3069792232951,75.2544291939885 1016.8039325753164,85.69706349529588 1061,90 C 1105.1960674246836,94.30293650470412 1134.0912489220302,92.46617521280496 1174,90 C 1213.9087510779698,87.53382478719504 1264.8310717365625,84.4382356534843 1311,86 C 1357.1689282634375,87.5617643465157 1398.5844641317187,93.78088217325785 1440,100 C 1440,100 1440,400 1440,400 Z"
+          stroke="none"
+          strokeWidth="0"
+          //fill="#ff008066"
+          fill="currentColor"
+          className="transition-all duration-300 ease-in-out delay-150 path-0 text-sky-700 opacity-30"
+          transform="rotate(-180 720 200)"
+        ></path>
+        <path
+          d="M 0,400 C 0,400 0,200 0,200 C 42.2391809023603,214.46899431398623 84.4783618047206,228.9379886279725 123,221 C 161.5216381952794,213.0620113720275 196.32573368347795,182.7170398020963 246,173 C 295.67426631652205,163.2829601979037 360.21870346136745,174.19385216364245 413,184 C 465.78129653863255,193.80614783635755 506.79945247105195,202.50755154333396 541,201 C 575.200547528948,199.49244845666604 602.5834866544246,187.7759416630218 648,180 C 693.4165133455754,172.2240583369782 756.8666009112496,168.3886818045789 800,175 C 843.1333990887504,181.6113181954211 865.950109700577,198.66933111866254 903,210 C 940.049890299423,221.33066888133746 991.3329602864433,226.93399372077087 1036,218 C 1080.6670397135567,209.06600627922913 1118.7180491536499,185.594693998254 1164,176 C 1209.2819508463501,166.405306001746 1261.794843098957,170.68723028621315 1309,177 C 1356.205156901043,183.31276971378685 1398.1025784505214,191.65638485689342 1440,200 C 1440,200 1440,400 1440,400 Z"
+          stroke="none"
+          strokeWidth="0"
+          //fill="#ff008088"
+          fill="currentColor"
+          className="transition-all duration-300 ease-in-out delay-150 path-1 text-sky-700 opacity-70"
+          transform="rotate(-180 720 200)"
+        ></path>
+        <path
+          d="M 0,400 C 0,400 0,300 0,300 C 51.70301689866996,297.43803909555015 103.40603379733992,294.87607819110036 146,287 C 188.59396620266008,279.12392180889964 222.07888170931028,265.9337263311487 263,272 C 303.9211182906897,278.0662736688513 352.27843936541893,303.38901648430453 399,309 C 445.72156063458107,314.61098351569547 490.8073608290141,300.51020773163293 535,290 C 579.1926391709859,279.48979226836707 622.492117318525,272.5701525891638 668,277 C 713.507882681475,281.4298474108362 761.2241698968866,297.2091819117118 809,303 C 856.7758301031134,308.7908180882882 904.6112030939282,304.59311976398885 938,298 C 971.3887969060718,291.40688023601115 990.3310177274006,282.4183390323329 1024,281 C 1057.6689822725994,279.5816609676671 1106.064725996469,285.7335241066796 1160,294 C 1213.935274003531,302.2664758933204 1273.410078286723,312.6475645409486 1321,314 C 1368.589921713277,315.3524354590514 1404.2949608566385,307.67621772952566 1440,300 C 1440,300 1440,400 1440,400 Z"
+          stroke="none"
+          strokeWidth="0"
+          //fill="#ff0080ff"
+          fill="currentColor"
+          className="transition-all duration-300 ease-in-out delay-150 path-2 text-sky-700 opacity-100"
+          transform="rotate(-180 720 200)"
+        ></path>
+      </svg>
+    </>
   );
 }

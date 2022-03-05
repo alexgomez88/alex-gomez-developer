@@ -10,7 +10,7 @@ export default function Home(props: any) {
     <MainLayout>
       <Hero />
       <About/>
-      {/* <Portafolio /> */}
+      <Portafolio projects={props.projects}/>
     </MainLayout>
   );
 }

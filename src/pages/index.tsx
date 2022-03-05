@@ -1,6 +1,32 @@
-import * as React from "react"
-import Home from "../ui/components/templates/home"
+import { graphql, useStaticQuery } from "gatsby";
+import * as React from "react";
+import Home from "../ui/components/templates/home";
 
-const IndexPage = () => <Home/>
+const useHomePageQuery = () => {
+    const data = useStaticQuery(graphql`
+        query {
+        allDatoCmsProject {
+            nodes {
+            id
+            title
+            description {
+                value
+            }
+            url
+            image {
+                url
+            }
+            }
+        }
+        }
+    `);
+    
+    return {projects: data.allDatoCmsProject.nodes};
+}
 
-export default IndexPage
+const IndexPage = () => {
+  const data = useHomePageQuery();
+  return <Home {...data} />;
+};
+
+export default IndexPage;

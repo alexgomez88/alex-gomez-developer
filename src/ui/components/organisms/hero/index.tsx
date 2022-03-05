@@ -14,7 +14,7 @@ export default function Hero() {
             aria-hidden="true"
           >
             <polygon points="50,0 100,0 50,100 50,100" />
-            <polygon points="50,0 100,100 50,100" fill-opacity="0.7" />
+            <polygon points="50,0 100,100 50,100" fillOpacity="0.7" />
           </svg>
           <main className=" mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 lg:h-full lg:flex items-center py-[10rem]">
             <div className="text-center lg:text-left">
