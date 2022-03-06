@@ -1,5 +1,6 @@
 import { StaticImage } from "gatsby-plugin-image";
 import React from "react";
+import Anchor from "../../atoms/anchor";
 import Background from "../../atoms/background";
 import Container from "../../atoms/container";
 import Title from "../../atoms/title";
@@ -7,7 +8,8 @@ import Title from "../../atoms/title";
 export default function About(props: any) {
   return (
     <>
-      <div id="about" className="bg-sky-700 py-20 -my-1 z-10">
+      <Anchor id="about" offset={-100} />
+      <div className="bg-sky-700 py-20 -my-1 z-10">
         <Container>
           <Title level={2} className="text-center text-white mb-20">
             About Me
