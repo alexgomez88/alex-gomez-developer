@@ -23,6 +23,10 @@ module.exports = {
         link: "/#portafolio",
       },
       {
+        text: "Colleagues",
+        link: "/#colleagues",
+      },
+      {
         text: "Contact",
         link: "/#contact",
       },

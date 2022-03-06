@@ -5,6 +5,20 @@ import Home from "../ui/components/templates/home";
 const useHomePageQuery = () => {
   const data = useStaticQuery(graphql`
     query {
+      allDatoCmsColleague {
+        nodes {
+          id
+          name
+          profesion
+          description {
+            value
+          }
+          project {
+            id
+            title
+          }
+        }
+      }
       allDatoCmsProject {
         nodes {
           id
@@ -25,7 +39,7 @@ const useHomePageQuery = () => {
     }
   `);
 
-  return { projects: data.allDatoCmsProject.nodes };
+  return { projects: data.allDatoCmsProject.nodes, colleagues: data.allDatoCmsColleague.nodes };
 };
 
 const IndexPage = () => {

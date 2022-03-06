@@ -5,7 +5,7 @@ import FlipCardProject from "../../molecules/flip-card-project";
 
 export default function Portafolio({ projects }: any) {
   return (
-    <div id="portafolio" className="bg-white py-20">
+    <div id="portafolio" className="bg-white py-10">
       <Container>
         <Title level={2} className="text-center text-sky-900 mb-20">
           Portafolio
