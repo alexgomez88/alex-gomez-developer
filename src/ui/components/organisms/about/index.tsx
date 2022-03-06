@@ -7,7 +7,8 @@ import Title from "../../atoms/title";
 export default function About(props: any) {
   return (
     <>
-      <div id="about" className="bg-sky-700 py-20">
+      
+      <div id="about" className="bg-sky-700 py-20 -my-1 z-10">
         <Container>
           <Title level={2} className="text-center text-white mb-20">
             About Me
