@@ -11,9 +11,14 @@ export default function Colleagues({ colleagues = [] }: any) {
       <Anchor id="colleagues" offset={-100} />
       <div className="bg-sky-900 py-10 -my-1">
         <Container>
-          <Title level={2} className="text-center text-white mb-20">
+          <Title level={2} className="text-center text-white mb-10">
             Colleagues
           </Title>
+          <p className="text-white text-justify max-w-2xl text-2xl mx-auto mb-10">
+            Being part of a team is essential for the success of a project, here
+            I present you colleagues from different areas with whom I have
+            worked
+          </p>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {colleagues.map((colleague: any) => (
               <ColleagueCard key={colleague.id} {...colleague} />

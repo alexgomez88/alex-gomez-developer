@@ -5,6 +5,11 @@ module.exports = {
     description: `Mechanical Engineer, Software Engineer, and Web Developer.`,
     siteUrl: `https://www.alexgomez.dev`,
     author: `Alejandro Gomez`,
+    contact: {
+      url: "https://getform.io/f/4fcc4bc8-9b64-43d8-ac71-bc5eb996645e",
+      method: "POST",
+    },
+    reCaptchaKey: "6Ld_xr4eAAAAAFhncOybZkG9q_OaDSFRS69srHeS",
     mainMenu: [
       {
         text: "Home",

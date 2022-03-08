@@ -23,10 +23,10 @@ export default function ColleagueCard({ name, description, profesion, project }:
             <StructuredText data={description} />
         </div>
         
-        <p className="text-xl">
+        <p className="">
           <span className="font-bold">Role: </span> {profesion}
         </p>
-        <p className="text-xl">
+        <p className="">
           <span className="font-bold">Common Projects: </span> {project.map((project: any) => project.title).join(", ")}
         </p>
       </div>

@@ -5,6 +5,7 @@ import Portafolio from "../../organisms/portafolio";
 import MainLayout from "../../layouts/main-layout";
 import About from "../../organisms/about";
 import Colleagues from "../../organisms/colleagues";
+import Contact from "../../organisms/contact";
 
 export default function Home(props: any) {
   return (
@@ -13,6 +14,7 @@ export default function Home(props: any) {
       <About/>
       <Portafolio projects={props.projects}/>
       <Colleagues colleagues={props.colleagues}/>
+      <Contact/>
     </MainLayout>
   );
 }

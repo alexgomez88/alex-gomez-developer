@@ -1,12 +1,14 @@
 import { graphql, useStaticQuery } from "gatsby";
 import React from "react";
+import { GoogleReCaptchaProvider } from "react-google-recaptcha-v3";
 import Helmet from "react-helmet";
+import Footer from "../../molecules/footer";
 
 import Navbar from "../../organisms/navbar";
 
-export default function MainLayout(props: any) {
+const useLayoutQuery = () => {
   const data = useStaticQuery(graphql`
-    query HeaderQuery {
+    query {
       site {
         siteMetadata {
           title
@@ -16,12 +18,18 @@ export default function MainLayout(props: any) {
             text
             link
           }
+          reCaptchaKey
         }
       }
     }
   `);
 
-  const {url, title, description, author} = data.site.siteMetadata;
+  return data.site.siteMetadata;
+};
+
+export default function MainLayout(props: any) {
+
+  const { url, title, description, author, mainMenu, reCaptchaKey } = useLayoutQuery();
 
   return (
     <>
@@ -56,8 +64,9 @@ export default function MainLayout(props: any) {
         {/* <meta property="twitter:image" content={image} />
         <link rel="icon" type="image/png" href={icon} /> */}
       </Helmet>
-      <Navbar menu={data.site.siteMetadata.mainMenu} />
-      <>{props.children}</>
+      <Navbar menu={mainMenu} />
+      <GoogleReCaptchaProvider reCaptchaKey={reCaptchaKey}>{props.children}</GoogleReCaptchaProvider>
+      <Footer />
     </>
   );
 }
